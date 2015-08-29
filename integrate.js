@@ -138,27 +138,22 @@ WebApp.update = function()
 			track.title = null;
 		}
 
-	var albumDiv = document.getElementById('currentalbum');
-	try{
-		var album = albumDiv.firstChild;
+	var album = document.getElementById('currentalbum').firstChild;
+	try{		
+		if (document.getElementById('currentalbum').textContent == 'path: ' && song == null) { 
+		track.album = null;
+		}
+		else {
 		track.album = album.innerText || album.textContent;
+		}
 	}
 	catch (e){
 		track.album = null;
 	} 
 
-	try{
-		var album_object = document.getElementById('ctrlCurrentArt').children[0];
-		if (album_object.nodeName == 'IMG') {
-			track.artLocation = album_object.src;
-		}
-		else{
-			track.artLocation = album_object.children[0].src;
-		}       
-	}
-	catch (e){
-		track.artLocation = null;
-	} 
+
+	track.artLocation = null;
+
 
 	player.setTrack(track);
 
