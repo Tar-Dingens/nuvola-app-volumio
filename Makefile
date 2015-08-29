@@ -21,7 +21,7 @@
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # Service integration id
-APP_ID = template
+APP_ID = volumio
 # Dependencies
 DEPS = rsvg-convert
 # Default installation destination
