@@ -1,0 +1,11 @@
+{
+    "id": "volumio",
+    "name": "Volumio",
+    "maintainer_name": "Steffen Coenen",
+    "maintainer_link": "https://github.com/Tar-Dingens",
+    "version_major": 1,
+    "version_minor": 0,
+    "api_major": 3,
+    "api_minor": 0,
+    "categories": "AudioVideo;Audio;"
+}
